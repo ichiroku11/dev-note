@@ -19,6 +19,9 @@
       }
     ],
     "output": "_site",
+    "sitemap": {
+      "baseUrl": "https://ichiroku11.github.io/dev-note"
+    },
     "template": [
       "default",
       "modern"
