@@ -18,7 +18,7 @@ concurrency:
   cancel-in-progress: false
   
 jobs:
-  publish-docs:
+  publish-docfx:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -27,11 +27,11 @@ jobs:
     steps:
     # Checkout
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
 
     # Setup
     - name: Setup .NET
-      uses: actions/setup-dotnet@v3
+      uses: actions/setup-dotnet@v5
       with:
         dotnet-version: 10.x
 
